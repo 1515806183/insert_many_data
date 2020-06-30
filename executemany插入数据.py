@@ -22,7 +22,7 @@ def add_test_users():
     for num in range(1, 10000):
         usersvalues.append((str(num),))
 
-    conn = connect(host='120.79.254.223', user='root', password='123456', database='info', charset='utf8', port=3307)
+    conn = connect(host='120.79.254.223', user='root', password='xxxx', database='info', charset='utf8', port=3307)
     cs = conn.cursor()  # 获取光标
     cs.executemany('insert into test_table (hua) values(%s)', usersvalues)
     conn.commit()

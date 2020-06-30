@@ -72,6 +72,6 @@ class startJob(object):
 
 
 start_time = time.time()
-job = startJob(host='120.79.254.223', password='123456', db='info', port=3307)
+job = startJob(host='120.79.254.223', password='xxxx', db='info', port=3307)
 job.run()
 print('耗时：', time.time() - start_time)
